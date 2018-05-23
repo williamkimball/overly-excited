@@ -1,4 +1,5 @@
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+let nextSentence = ["I","grew","up","in","Murfreesboro,","went","to","school","in","Cleveland","Tn","and","I'm","now", "studying","programming","in","Nashville."];
 
 function addExcitement (theWordArray, characterInput = "!") {
 
@@ -21,3 +22,5 @@ function addExcitement (theWordArray, characterInput = "!") {
 }
 addExcitement(sentence)
 addExcitement(sentence, '@')
+
+addExcitement(nextSentence, "‽")
