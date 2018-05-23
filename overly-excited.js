@@ -1,6 +1,6 @@
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
-function addExcitement (theWordArray, characterInput) {
+function addExcitement (theWordArray, characterInput = "!") {
 
     // Each time the for loop executes, you're going to add one more word to this string
     let buildMeUp = ""
@@ -19,5 +19,5 @@ function addExcitement (theWordArray, characterInput) {
     }
 
 }
-
+addExcitement(sentence)
 addExcitement(sentence, '@')
