@@ -1,13 +1,13 @@
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 let nextSentence = ["I","grew","up","in","Murfreesboro,","went","to","school","in","Cleveland","Tn","and","I'm","now", "studying","programming","in","Nashville."];
 
-function addExcitement (theWordArray, characterInput = "!") {
+let addExcitement = (theWordArray, characterInput = "!") => {
 
     // Each time the for loop executes, you're going to add one more word to this string
     let buildMeUp = ""
     let character = `${characterInput}`
 
-    for (i = 1; i < theWordArray.length; i++) {
+    for (i = 1; i <= theWordArray.length; i++) {
         // Concatenate the new word onto buildMeUp
         if (i % 3 === 0 ) {
             buildMeUp += `${theWordArray[i-1]}${character} `
