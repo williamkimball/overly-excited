@@ -6,14 +6,13 @@ function addExcitement (theWordArray) {
     let buildMeUp = ""
     let exclamationCounter = "!"
 
-    for (let i = 0; i < theWordArray.length; i++) {
+    for (i = 1; i < theWordArray.length; i++) {
         // Concatenate the new word onto buildMeUp
-        if (i %3 === 0 ) {
-            buildMeUp += `${theWordArray[i]}${exclamationCounter} `
-            exclamationCounter += "!"
-        }
-        else {
-            buildMeUp += `${theWordArray[i]} `;
+        if (i % 3 === 0 ) {
+            buildMeUp += `${theWordArray[i-1]}${exclamationCounter} `
+            exclamationCounter += "!";
+        } else {
+            buildMeUp += `${theWordArray[i-1]} `;
         }
         // Print buildMeUp to the console
         console.log(buildMeUp)
