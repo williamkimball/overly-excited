@@ -8,7 +8,7 @@ let addExcitement = (theWordArray, characterInput = "!") => {
     let character = `${characterInput}`
 
     for (i = 1; i <= theWordArray.length; i++) {
-        // Concatenate the new word onto buildMeUp
+        // Concatenate the new word onto buildMeUp either if it is divisible by three or not
         if (i % 3 === 0 ) {
             buildMeUp += `${theWordArray[i-1]}${character} `
             character += `${characterInput}`;
